@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Intro</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    
+    <p>
+    {{ name }}
+    </p>
+    
+    <p>
+    {{ animals[0] }}
+    </p>
+
+    <button v-on:click="changeMessage()"> Click Here
+
+    </button>
+
+    <input type="text" v-model="message">
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
