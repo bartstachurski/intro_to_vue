@@ -3,12 +3,25 @@ var app = new Vue({
   data: {
     message: "Hello Vue!",
     name: "Bart",
-    animals: ["Gryffin", "Wallace", "Cookie", "Whispy"]
+    animals: ["Gryffin", "Wallace", "Cookie", "Whispy"],
+    showInfo: true
   },
   methods: {
     changeMessage: function() {
-      console.log("your method works");
-      this.message = "Goodbye Vue!"; 
+      if (this.message === "Goodbye Vue!") {
+        this.message = "Hello Vue!";
+      } else {
+        this.message = "Goodbye Vue!";
+      }
+    },
+
+    toggleInfo: function() {
+      // if (this.showInfo === true) {
+      //   this.showInfo = false;
+      // } else {
+      //   this.showInfo = true;
+      // }
+      this.showInfo = !this.showInfo;
     }
   }
 });

@@ -22,6 +22,9 @@
     </button>
 
     <input type="text" v-model="message">
+
+    <p><button v-on:click="toggleInfo"> Click to Toggle Fun</button></p>
+    <p v-if="showInfo"> Fun message brings all the fun</p>
   </div>
   <script src="index.js"></script>
 </body>
